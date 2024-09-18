@@ -6,11 +6,11 @@ public class Person {
     int age;
     boolean isTeen;
 
-    public String getFirstname() {
+    public String getFirstName() {
         return firstname;
     }
 
-    public String getLastname() {
+    public String getLastName() {
         return lastname;
     }
 

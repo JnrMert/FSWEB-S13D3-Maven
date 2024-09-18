@@ -3,19 +3,23 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
         Person person = new Person("John", "Doe", 20);
-        Person person2 = new Person("Mert", "Yazıcı", 30);
-        Person person3 = new Person("Berkay", "Emir", 24);
 
-        System.out.println("Firstname: " + person.getFirstname());
-        System.out.println("LastName: " + person.getLastname());
+        System.out.println("Firstname: " + person.getFirstName());
+
+        System.out.println("LastName: " + person.getLastName());
+
         System.out.println("Age: " + person.getAge());
 
-        System.out.println("Firstname: " + person2.getFirstname());
-        System.out.println("LastName: " + person2.getLastname());
-        System.out.println("Age: " + person2.getAge());
 
-        System.out.println("Firstname: " + person3.getFirstname());
-        System.out.println("LastName: " + person3.getLastname());
-        System.out.println("Age: " + person3.getAge());
+        Wall wall = new Wall(5,4);
+        System.out.println("area= " + wall.getArea());
+
+        wall.setHeight(-1.5);
+
+        System.out.println("width= " + wall.getWidth());
+
+        System.out.println("height= " + wall.getHeight());
+
+        System.out.println("area= " + wall.getArea());
     }
 }
